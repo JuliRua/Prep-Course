@@ -35,6 +35,8 @@ const {
   esVocal,
 } = require('../homework.js');
 
+
+
 describe('nuevaString', function() {
   it('Deberia ser un string', function() {
     expect(typeof nuevaString).toBe('string');
@@ -78,12 +80,7 @@ describe('devolverString(str)', function() {
   });
 });
 
-describe('suma(x, y)', function() {
-  it('Deberia devolver la suma de los dos argumentos', function() {
-    expect(suma(5, 5)).toBe(10);
-    expect(suma(-1, 5)).toBe(4);
-  });
-});
+
 
 describe('resta(x, y)', function() {
   it('Deberia devolver la diferencia de los dos argumentos', function() {
