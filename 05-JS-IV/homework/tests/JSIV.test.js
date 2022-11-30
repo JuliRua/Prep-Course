@@ -110,7 +110,7 @@ describe('tieneEmail(user)', function() {
 describe('tienePropiedad(object, property)', function() {
   it('should return true if the object has the property that is passed in', function() {
     const obj = {
-      x: true,
+      x: "tomi",
     };
     expect(tienePropiedad(obj, 'x')).toEqual(true);
     expect(tienePropiedad(obj, 'y')).toEqual(false);
@@ -164,11 +164,11 @@ describe('pasarUsuarioAPremium(users)', function() {
       { esPremium: false },
     ];
     const updatedUsers = [
-      { esPremium: true },
-      { esPremium: true },
-      { esPremium: true },
-      { esPremium: true },
-      { esPremium: true },
+     { esPremium: true },
+     { esPremium: true },
+     { esPremium: true },
+     { esPremium: true },
+     { esPremium: true },
     ];
     expect(pasarUsuarioAPremium(users)).toEqual(updatedUsers);
   });
@@ -226,7 +226,7 @@ describe('agregarMetodoCalculoDescuento(storeItem)', function() {
     expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento).toBeDefined();
   });
   it('should return the discount precio from the new \'precioConDescuento\' method', function() {
-    expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBe(72);
+   expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBe(72);
     expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento()).toBe(2.5);
   });
 });
